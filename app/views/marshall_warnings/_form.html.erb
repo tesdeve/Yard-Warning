@@ -1,0 +1,42 @@
+<%= form_with(model: marshall_warning) do |form| %>
+  <% if marshall_warning.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(marshall_warning.errors.count, "error") %> prohibited this marshall_warning from being saved:</h2>
+
+      <ul>
+        <% marshall_warning.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :dsp %>
+    <%= form.text_field :dsp %>
+  </div>
+
+  <div class="field">
+    <%= form.label :registration_number %>
+    <%= form.text_field :registration_number %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fault %>
+    <%= form.text_area :fault %>
+  </div>
+
+  <div class="field">
+    <%= form.label :action_comment %>
+    <%= form.text_area :action_comment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.datetime_select :date %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

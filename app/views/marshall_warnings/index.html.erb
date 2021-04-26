@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Marshall Warnings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dsp</th>
+      <th>Registration number</th>
+      <th>Fault</th>
+      <th>Action comment</th>
+      <th>Date</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @marshall_warnings.each do |marshall_warning| %>
+      <tr>
+        <td><%= marshall_warning.dsp %></td>
+        <td><%= marshall_warning.registration_number %></td>
+        <td><%= marshall_warning.fault %></td>
+        <td><%= marshall_warning.action_comment %></td>
+        <td><%= marshall_warning.date %></td>
+        <td><%= link_to 'Show', marshall_warning %></td>
+        <td><%= link_to 'Edit', edit_marshall_warning_path(marshall_warning) %></td>
+        <td><%= link_to 'Destroy', marshall_warning, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Marshall Warning', new_marshall_warning_path %>

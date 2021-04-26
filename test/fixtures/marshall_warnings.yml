@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dsp: MyString
+  registration_number: MyString
+  fault: MyText
+  action_comment: MyText
+  date: 2021-04-26 18:03:26
+
+two:
+  dsp: MyString
+  registration_number: MyString
+  fault: MyText
+  action_comment: MyText
+  date: 2021-04-26 18:03:26
