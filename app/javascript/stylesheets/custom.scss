@@ -26,8 +26,18 @@
   background-color: #fffb00;
   color: #000;
   margin-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
+.mb-mr {
+  margin-bottom: 3%;
+  //margin-right: 5% !important;
+}
+
+#newLink {
+    margin-left: 5%;
+}
 .margins {
   margin-top: 10% !important;
   margin-bottom: 10%;
@@ -42,7 +52,7 @@
 }
 
 .dateTime {
-    display: none;
+    display: none !important;;
 }
 
 .dsp {
@@ -90,7 +100,9 @@
 }
 // SHOW ENDS //
 
-
+.col-sm-6.col-form-label {
+  text-align: right;
+}
 
 
 /* ========================================================= */
@@ -119,7 +131,12 @@
 }
 
 .dsp {
-  margin-top: 12% !important;
+  margin-top: 2% !important;
+}
+
+.form-control {
+    width: 100% !important;
+    //margin-left: 12%;
 }
 
 .margins {
@@ -147,6 +164,10 @@
     margin-bottom: 8.5%;
 }
 
+.mb-mr {
+    margin-right: none !important;
+}
+
 
 @media (max-width: 576px) and (orientation : portrait) {
   .lnkNewWarning {
@@ -166,6 +187,10 @@
     font-size: 1rem !important;
   }
 
+  .mb-mr {
+    margin-left: 2% !important;
+    margin-right: 2% !important;
+  }
 
 }
 
@@ -186,9 +211,10 @@
 }
 
 @media (max-width:800px) and  (orientation:landscape) {
- /* .cardInitial {
-      margin: 3% !important;
-  } */
+
+  .col-form-label-lg, .form-control {
+      font-size: 1.3rem !important;
+  }
 
 // Buttons
   .edit, .check, .back {
@@ -198,6 +224,20 @@
   
   .lnkNewWarning {
     width: 30%;
+  }
+
+  .mb-mr {
+    //margin-right: 5% !important;
+    //margin-left: 2% !important;
+  }
+
+  //.form-control {
+  //  width: 100% !important;
+  //}
+
+  .form-control {
+    width: 90% !important;
+    margin-left: 9%;
   }
 
 }
