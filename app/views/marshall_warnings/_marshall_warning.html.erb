@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+<div class="cardInitial" id="showProduct">
+  <div class="card">
+    <div class="headerInitial">
+      <h1 class="text-center my-5 initialTitle">Warning</h1>
+    </div>
+
+<!--       <div class="row justify-content-center mb-2">    
+        <div class="col-6 strong d-flex justifying-show-label ">DSP:</div> 
+        <div class="col">
+          <%#= @marshall_warning.service_provider_id %>
+        </div>            
+      </div> -->
+    
+      <div class="row justify-content-center mb-2">    
+        <div class="col-4 strong d-flex justifying-show-label ">DSP:</div> 
+        <div class="col">
+          <%= @marshall_warning.dsp %>
+        </div>            
+      </div>
+
+      <div class="row justify-content-center mb-2">    
+        <div class="col-4 strong d-flex justifying-show-label ">Reg_No:</div> 
+        <div class="col">
+          <%= @marshall_warning.registration_number %>
+        </div>            
+      </div>
+
+      <div class="row justify-content-center mb-2">    
+        <div class="col-4 strong d-flex justifying-show-label ">Fault:</div> 
+        <div class="col">
+           <%= @marshall_warning.fault %>
+        </div>            
+      </div>
+
+      <div class="row justify-content-center mb-2">    
+        <div class="col-4 strong d-flex justifying-show-label ">Action comment:</div> 
+        <div class="col">
+          <%= @marshall_warning.action_comment %>
+        </div>            
+      </div>
+
+       <div class="row justify-content-center mb-2">    
+        <div class="col-4 strong d-flex justifying-show-label ">Datetime:</div> 
+        <div class="col">
+          <%= @marshall_warning.date.strftime("%d/%b/%Y") %>
+        </div>            
+      </div>
+
+    <div class="row margins justify-content-center">   
+      <%= link_to 'Warnings',  marshall_warnings_path, :class=> "btn btn-success back col-sm-5"%>
+      <%= link_to 'Edit', edit_marshall_warning_path(@marshall_warning), :class=> "btn btn-primary edit col-sm-5" %>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ,remote: true  -->
