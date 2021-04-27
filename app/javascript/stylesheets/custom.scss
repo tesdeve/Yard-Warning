@@ -24,7 +24,7 @@
 
 .headerInitial {
   background-color: #fffb00;
-  color: #001;
+  color: #000;
   margin-bottom: 10%;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -38,6 +38,16 @@
 #newLink {
     margin-left: 5%;
 }
+
+#newLinkBottom {
+  margin-left: 7.7% !important; 
+ 
+}
+
+.lnkNewWarningBottom {
+  border-radius: 5rem !important;
+}
+
 .margins {
   margin-top: 10% !important;
   margin-bottom: 10%;
@@ -60,6 +70,12 @@
 }
 
 // BUTTONS STARTS
+
+.check {
+  color: #fff;
+  background-color: #15cc20 !important; 
+  border-color: #15cc20 !important;
+}
 .back {  
   background-color: black !important;
   color: white !important;
@@ -71,6 +87,11 @@
   color: black !important;
   border-color: #d6f107!important;
 }
+
+.back, .edit, .check{
+  font-size: 1.3rem !important
+}
+
 
 .check, .edit{
   margin-left: 7%;
@@ -139,6 +160,10 @@
     //margin-left: 12%;
 }
 
+.lnkNewWarningBottom {
+    width: 28% !important;
+}
+
 .margins {
   margin-top: 10% !important;
   margin-bottom: 10%;
@@ -155,7 +180,7 @@
 }
 
 .justifying-show-label {
-  margin-left: 6% !important;
+  //margin-left: 6% !important;
 }
 
 .edit, .check, .back{
@@ -175,11 +200,20 @@
     font-size: 1rem !important;
   }
 
+.lnkNewWarningBottom {
+    width: 50% !important;
+}
+
+.rowAligntment {
+    padding-right: 3%;
+    padding-left: 3%;
+}
+
 // SHOW //
 .justifying-show-label {
     //justify-content: flex-start !important;
     //width: 0 !important;
-    margin-left: 6% !important;
+    //margin-left: 6% !important;
 }
 // SHOW ENDS //
 
@@ -204,6 +238,10 @@
     font-size: 1.9rem !important;
   }
 
+  .lnkNewWarningBottom {
+    width: 19%;
+  }
+
   .edit, .check, .back{
     font-size: 1rem !important;
     width: 30% !important;
@@ -226,6 +264,13 @@
     width: 30%;
   }
 
+  .lnkNewWarningBottom {
+      width: 27.6%;
+  }
+
+  .lnkNewWarning {
+      width: 28%;
+  }
   .mb-mr {
     //margin-right: 5% !important;
     //margin-left: 2% !important;
