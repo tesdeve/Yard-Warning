@@ -24,7 +24,7 @@
 
 .headerInitial {
   background-color: #fffb00;
-  color: #001;
+  color: #000;
   margin-bottom: 10%;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -38,6 +38,16 @@
 #newLink {
     margin-left: 5%;
 }
+
+#newLinkBottom {
+  margin-left: 7.7% !important; 
+ 
+}
+
+.lnkNewWarningBottom {
+  border-radius: 5rem !important;
+}
+
 .margins {
   margin-top: 10% !important;
   margin-bottom: 10%;
@@ -139,6 +149,10 @@
     //margin-left: 12%;
 }
 
+.lnkNewWarningBottom {
+    width: 28% !important;
+}
+
 .margins {
   margin-top: 10% !important;
   margin-bottom: 10%;
@@ -175,6 +189,10 @@
     font-size: 1rem !important;
   }
 
+.lnkNewWarningBottom {
+    width: 50% !important;
+}
+
 // SHOW //
 .justifying-show-label {
     //justify-content: flex-start !important;
@@ -204,6 +222,10 @@
     font-size: 1.9rem !important;
   }
 
+  .lnkNewWarningBottom {
+    width: 19%;
+  }
+
   .edit, .check, .back{
     font-size: 1rem !important;
     width: 30% !important;
@@ -226,6 +248,13 @@
     width: 30%;
   }
 
+  .lnkNewWarningBottom {
+      width: 27.6%;
+  }
+
+  .lnkNewWarning {
+      width: 28%;
+  }
   .mb-mr {
     //margin-right: 5% !important;
     //margin-left: 2% !important;
