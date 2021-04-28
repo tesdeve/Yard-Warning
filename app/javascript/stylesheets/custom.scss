@@ -3,25 +3,24 @@
   //background-color: #cef8fd !important;
   background-color: #fff12029 !important;
 }
-
-.strong {
+.strongSize {
   font-weight: 550;
+  font-size: 1.25rem;  
 }
-
+.showOutput {
+  font-size: 1.25rem;
+}
 .table th{
   text-align: center;
 }
-
 .cardInitial {
   margin: 3%;
 }
-
 .initialTitle {
     margin-top: 6%;
     margin-bottom: 6%;
     font-weight: 650;
 }
-
 .headerInitial {
   background-color: #fffb00;
   color: #000;
@@ -29,48 +28,45 @@
   padding-top: 5%;
   padding-bottom: 5%;
 }
-
-.mb-mr {
-  margin-bottom: 3%;
-  //margin-right: 5% !important;
+.searchDiv {
+    margin-left: 5%;
+    margin-right: 5%;
 }
-
+.inputSearch {
+    margin-bottom: 2% !important;
+}
+.mb-mr {
+  margin-bottom: 4%;
+}
 #newLink {
     margin-left: 5%;
 }
-
 #newLinkBottom {
   margin-left: 7.7% !important; 
  
 }
-
 .lnkNewWarningBottom {
   border-radius: 5rem !important;
 }
-
 .margins {
   margin-top: 10% !important;
   margin-bottom: 10%;
 }
-
 .justifying {
   justify-content: flex-end
 }
-
 #newProductLink{
   margin-bottom: 10%;
 }
-
-.dateTime {
-    display: none !important;;
+.form-control {
+  font-weight: 300 !important;
 }
-
+.dateTime {
+  display: none !important;;
+}
 .dsp {
   margin-top: 8% !important;
 }
-
-// BUTTONS STARTS
-
 .check {
   color: #fff;
   background-color: #15cc20 !important; 
@@ -81,50 +77,42 @@
   color: white !important;
   border-color: black !important;  
 }
-
 .edit {
   background-color: yellow !important;
   color: black !important;
   border-color: #d6f107!important;
 }
-
 .back, .edit, .check{
-  font-size: 1.3rem !important
+  font-size: 1.3rem !important;
+  max-width: 20%;
+  width: 30% !important;
 }
-
-
 .check, .edit{
   margin-left: 7%;
 }
-
 .lnkNewWarning {
     width: 20%;
     font-size: 1rem !important;
     border-radius: 5rem !important;
 }
-// BUTTONS ENDS 
-
-// SHOW STARTS //
-
 .justifying-show-label {
-    justify-content: flex-end !important;
-    //width: 0 !important;
-    //margin-left: 10% 
+  justify-content: flex-end; 
 }
-
+  .justifying-show-label-special {
+    justify-content: end;
+  }
+.showOutput {
+  font-weight: 250;
+}
 .product_action {
   color: green;
 }
-
 .product_action2 {
   color: red;
 }
-// SHOW ENDS //
-
 .col-sm-6.col-form-label {
   text-align: right;
 }
-
 
 /* ========================================================= */
 /* ================  MEDIA QUERIES - PORTRAIT ============== */
@@ -132,91 +120,83 @@
 
 @media (max-width: 992px) and (orientation : portrait) { 
 
+  .strongSize, .showOutput {
+   font-size: 1.25rem !important;
+  }
   .initialTitle {
     font-size: 1.7rem !important;
   }
-
   .edit, .check, .back {
-      font-size: 1.1rem !important;
+      font-size: 1.25rem !important;
   }
-
   .lnkNewWarning {
     width: 30%;
+  }
+  .justifying-show-label-special {
+    justify-content: end !important;
   }
 }
 
 @media (max-width: 767px) and (orientation : portrait) {
-  /*.cardInitial {
-      margin: 3% !important;
-  } */
-}
 
-.dsp {
-  margin-top: 2% !important;
+  .dsp {
+    margin-top: 2% !important;
+  }
+  .form-control {
+      width: 100% !important;
+  }
+  .lnkNewWarningBottom {
+      width: 28% !important;
+  }
+  .margins {
+    margin-top: 10% !important;
+    margin-bottom: 10%;
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+  }
+  .justifying {
+    justify-content: center;
+  }
+  .justifying-input {
+    justify-content: center;
+  }
+  .edit, .check, .back{
+      width: 40% !important;
+      margin-top: 7.5%;
+      margin-bottom: 8.5%;
+      max-width: 100%;
+  }
+  .mb-mr {
+      margin-right: none !important;
+  }
+  .showOutput {
+    font-weight: 250;
+  }
 }
-
-.form-control {
-    width: 100% !important;
-    //margin-left: 12%;
-}
-
-.lnkNewWarningBottom {
-    width: 28% !important;
-}
-
-.margins {
-  margin-top: 10% !important;
-  margin-bottom: 10%;
-  margin-left: 5% !important;
-  margin-right: 5% !important;
-}
-
-.justifying {
-  justify-content: center;
-}
-
-.justifying-input {
-  justify-content: center;
-}
-
-.justifying-show-label {
-  //margin-left: 6% !important;
-}
-
-.edit, .check, .back{
-    width: 40% !important;
-    margin-top: 7.5%;
-    margin-bottom: 8.5%;
-}
-
-.mb-mr {
-    margin-right: none !important;
-}
-
 
 @media (max-width: 576px) and (orientation : portrait) {
+
   .lnkNewWarning {
     width: 50%;
     font-size: 1rem !important;
   }
-
-.lnkNewWarningBottom {
-    width: 50% !important;
-}
-
-.rowAligntment {
-    padding-right: 3%;
-    padding-left: 3%;
-}
-
-// SHOW //
-.justifying-show-label {
-    //justify-content: flex-start !important;
-    //width: 0 !important;
-    //margin-left: 6% !important;
-}
-// SHOW ENDS //
-
+  .lnkNewWarningBottom {
+      width: 50% !important;
+  }
+  .rowAligntment {
+      padding-right: 3%;
+      padding-left: 3%;
+  }
+  .justifying-show-label {
+    justify-content: flex-end !important;
+    
+  }
+  .justifying-show-label-special {
+    justify-content: center !important;
+  }
+  .strongSize, .showOutput {
+    font-size: 1.2rem !important;
+  }
   .back {
     font-size: 1rem !important;
   }
@@ -226,6 +206,9 @@
     margin-right: 2% !important;
   }
 
+  .form-control {
+      font-size: 1.2rem !important;
+  }
 }
 
 
@@ -237,52 +220,62 @@
   .initialTitle {
     font-size: 1.9rem !important;
   }
-
   .lnkNewWarningBottom {
     width: 19%;
   }
-
   .edit, .check, .back{
-    font-size: 1rem !important;
+    //font-size: 1rem !important;
     width: 30% !important;
   }
 }
 
 @media (max-width:800px) and  (orientation:landscape) {
 
-  .col-form-label-lg, .form-control {
-      font-size: 1.3rem !important;
+  .headerInitial {
+      margin-bottom: 5%;
   }
-
-// Buttons
+  //.col-form-label-lg, .form-control {
+  //    font-size: 1.2rem !important;
+  //}
+  .searchDiv {
+    margin-left: 0 !important;
+    margin-right: 5%;
+  }
+  .inputSearch {
+    margin-bottom: 2% !important;
+    font-size: 1.05rem !important;
+  }
+  .justifying-show-label {
+      justify-content: end !important;
+  }
+  .justifying-show-label-special {
+    justify-content: end !important;
+  }
+  .justifying {
+      justify-content: end !important;
+  }
   .edit, .check, .back {
-    font-size: 1rem !important;
+    font-size: 1.25rem !important;
     width: 30%;
-  }
-  
+  }  
   .lnkNewWarning {
     width: 30%;
   }
-
   .lnkNewWarningBottom {
       width: 27.6%;
   }
-
   .lnkNewWarning {
       width: 28%;
   }
-  .mb-mr {
-    //margin-right: 5% !important;
-    //margin-left: 2% !important;
+  .btnSearch {
+    margin-left: 9% !important;
   }
-
-  //.form-control {
-  //  width: 100% !important;
-  //}
-
   .form-control {
-    width: 90% !important;
+    width: 100% !important;
     margin-left: 9%;
+  }
+ .strongSize, .showOutput {
+    font-size: 1.2rem !important;
   }
 
 }

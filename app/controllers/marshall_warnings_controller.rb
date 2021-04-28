@@ -56,6 +56,15 @@ class MarshallWarningsController < ApplicationController
     end
   end
 
+
+  def search 
+    #column_dsp = MarshallWarning.where("dsp ILIKE ?", "%" + params[:q] + "%" )
+    column_registration_number = MarshallWarning.where("registration_number ILIKE ?", "%" + params[:q] + "%" )
+    @marshall_warnings = MarshallWarning.where("dsp ILIKE ?", "%" + params[:q] + "%" ).or(column_registration_number) 
+    # Based on ImportExcel2 project
+  end 
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_marshall_warning

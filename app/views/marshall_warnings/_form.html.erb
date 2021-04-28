@@ -11,8 +11,6 @@
     </div>
   <% end %>
 
-
-
   <div class="cardInitial">
     <div class="card ">
       <div class="headerInitial">
@@ -21,51 +19,47 @@
 
 <!--   <div class="field">
     <%#= form.label :service_provider_id %>
-    <%#= form.text_field :service_provider_id %>
+    <%#= form.text_field :dsp_id %>
   </div> -->
 
       <div class="row mb-mr dsp"> 
-        <%= form.label :dsp, "DSP", :class => "strong col-sm-4 col-form-label col-form-label-lg d-flex justifying" %> 
+        <%= form.label :dsp, "DSP", :class => "strongSize col-sm-4 col-form-label col-form-label-lg d-flex justifying" %> 
         <div class="col-sm-7 d-flex flex-row-revers justifying-input">  
           <%= form.text_field :dsp, :class=> "form-control form-control-lg " %>  
         </div>
       </div>
 
       <div class="row mb-mr"> 
-        <%= form.label :registration_number,  "Reg No.", :class => "strong col-sm-4 col-form-label col-form-label-lg d-flex justifying" %>
+        <%= form.label :registration_number,  "Reg No.", :class => "strongSize col-sm-4 col-form-label col-form-label-lg d-flex justifying" %>
         <div class="col-sm-7 d-flex flex-row-revers justifying-input">
          <%= form.text_field :registration_number, :class=> "form-control form-control-lg" %>  
         </div>
       </div>
 
      <div class="row mb-mr"> 
-        <%= form.label :fault, :class => "strong col-sm-4 col-form-label col-form-label-lg d-flex justifying" %>
+        <%= form.label :fault, :class => "strongSize col-sm-4 col-form-label col-form-label-lg d-flex justifying" %>
         <div class="col-sm-7 d-flex flex-row-revers justifying-input">
           <%= form.text_area :fault, :class=> "form-control form-control-lg " %>  
         </div>
       </div>
 
       <div class="row mb-mr"> 
-        <%= form.label :action_comment, "Action/Comment", :class => "strong col-sm-4 col-form-label col-form-label-lg d-flex justifying" %>
+        <%= form.label :action_comment, "Action/Comment", :class => "strongSize col-sm-4 col-form-label col-form-label-lg d-flex justifying" %>
         <div class="col-sm-7 d-flex flex-row-revers justifying-input">
           <%= form.text_area :action_comment, :class=> "form-control form-control-lg " %>  
         </div>
       </div>
 
       <div class="row mb-mr dateTime"> 
-        <%= form.label :datetime, "Date", :class => "strong col-sm-6 col-form-label col-form-label-lg d-flex justifying" %>
+        <%= form.label :datetime, "Date", :class => "strongSize col-sm-6 col-form-label col-form-label-lg d-flex justifying" %>
         <div class="col-sm-5 d-flex flex-row-revers justifying-input">
           <%= form.text_field :date, :class=> "form-control form-control-lg " %>  
         </div>
       </div>
-
-<!--       <div class="actions">
-        <%#= form.submit %>
-      </div> -->
-
-            <div class="row margins justify-content-center">           
+      
+      <div class="row margins justify-content-center">           
         <%= link_to 'Warnings', marshall_warnings_path, :class=> "btn btn-primary back col-sm-5"%> <!-- #, :remote => true  -->
-        <%= form.submit "Create", :class=> "btn btn-success check col-sm-5" %>
+        <%= form.submit "Submit", :class=> "btn btn-success check col-sm-5" %>
       </div>
     <% end %>
   </div>

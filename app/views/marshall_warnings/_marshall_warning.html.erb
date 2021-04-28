@@ -1,5 +1,5 @@
-<!-- <p id="notice"><%= notice %></p>
- --><div class="cardInitial" id="showProduct">
+<!-- <p id="notice"><%= notice %></p>-->
+<div class="cardInitial" id="showProduct">
   <div class="card">
     <div class="headerInitial">
       <h1 class="text-center my-5 initialTitle">Warning</h1>
@@ -8,41 +8,38 @@
 <!--       <div class="row justify-content-center mb-2">    
         <div class="col-6 strong d-flex justifying-show-label ">DSP:</div> 
         <div class="col">
-          <%#= @marshall_warning.service_provider_id %>
+          <%#= @marshall_warning.dsp_id %>
         </div>            
       </div> -->
     
       <div class="row justify-content-center mb-2 rowAligntment">    
-        <div class="col-4 strong d-flex justifying-show-label ">DSP:</div> 
-        <div class="col-8">
+        <div class="col-4 strongSize d-flex justifying-show-label ">DSP:</div> 
+        <div class="col-8 showOutput">
           <%= @marshall_warning.dsp %>
         </div>            
       </div>
 
       <div class="row justify-content-center mb-2 rowAligntment">    
-        <div class="col-4 strong d-flex justifying-show-label ">Reg_No:</div> 
-        <div class="col-8">
+        <div class="col-4 strongSize d-flex justifying-show-label ">Reg_No:</div> 
+        <div class="col-8 showOutput">
           <%= @marshall_warning.registration_number %>
         </div>            
       </div>
-
-      <div class="row justify-content-center mb-2 rowAligntment">    
-        <div class="col-4 strong d-flex justifying-show-label ">Fault:</div> 
-        <div class="col-8">
-           <%= @marshall_warning.fault %>
-        </div>            
+      <div class="row mb-mr"> 
+       <label class = "strongSize col-sm-4 col-form-label col-form-label-lg d-flex  justifying-show-label-special">  Fault: </label>
+        <div class="col-sm-7 d-flex flex-row-revers showOutput"><%= @marshall_warning.fault %>
+        </div>
       </div>
 
-      <div class="row justify-content-center mb-2 rowAligntment">    
-        <div class="col-4 strong d-flex justifying-show-label ">Action / Comment:</div> 
-        <div class="col-8">
-          <%= @marshall_warning.action_comment %>
-        </div>            
+      <div class="row mb-mr"> 
+       <label class = "strongSize col-sm-4 col-form-label col-form-label-lg d-flex justifying-show-label-special"> Action / Comment: </label>
+        <div class="col-sm-7 d-flex flex-row-revers showOutput"><%= @marshall_warning.action_comment %>
+        </div>
       </div>
 
-       <div class="row justify-content-center mb-2 rowAligntment">    
-        <div class="col-4 strong d-flex justifying-show-label ">Date:</div> 
-        <div class="col-8">
+       <div class="row justify-content-center my-4 rowAligntment">    
+        <div class="col-4 strongSize d-flex justifying-show-label ">Date:</div> 
+        <div class="col-8 showOutput">
           <%= @marshall_warning.date.strftime("%d/%b/%Y") %>
         </div>            
       </div>
@@ -56,4 +53,4 @@
 
 
 
-<!-- ,remote: true  -->
+<!-- ,remote: true 

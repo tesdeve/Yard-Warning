@@ -1,24 +1,14 @@
-<!-- <p id="notice"><%= notice %></p>
-<p id="notice"><%= notice %></p> -->
 <div class="cardInitial" id="indexwarnings">
   <div class="card">
     <div class="headerInitial">
-      <h1 class="text-center margins-y initialTitle">Warnings</h1>
+      <h1 class="text-center margins-y initialTitle">Warnings Found</h1>
     </div>
     <div id="newLink">
       <%= link_to 'New Warning', new_marshall_warning_path, :class=> "btn btn-primary lnkNewWarning my-4"%>
     </div>
-    <hr>
-    <div class="input-group mb-3">
-      <form class="searchDiv" action="/search">
-        <input class="form-control inputSearch" name="q" type="search" placeholder="Search by DSP or Reg No." aria-label="Search" aria-describedby="basic-addon2">
-        <button class="btn btn-outline-success btnSearch" type="submit">Search</button>
-      </form>
-    </div>
-    <hr>
     <div class="table-responsive ">
       <table class="table table-striped">
-        <thead>
+				<thead>
           <tr>
             <th>DSP</th>
             <th>Reg No.</th>
@@ -27,10 +17,9 @@
             <th>Date</th>
             <th colspan="3"></th>
           </tr>
-        </thead>
-
-        <tbody>
-          <% @marshall_warnings.each do |marshall_warning| %>
+				</thead>
+				<tbody>
+				  <% @marshall_warnings.each do |marshall_warning| %>
             <tr>
               <!-- <td class="text-center"><%#= marshall_warning.dsp_id %></td> -->
               <td class="text-center"><%= marshall_warning.dsp.upcase %></td>
@@ -43,13 +32,12 @@
               <td class="text-center"><%= link_to 'Delete', marshall_warning, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             </tr>
           <% end %>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
-<div id="newLinkBottom">
-  <%= link_to 'New Warning', new_marshall_warning_path, :class=> "btn btn-primary lnkNewWarning my-4"%>
+				</tbody>
+			</table>
+		</div>
+	</div>
 </div>
 
-<!-- remote: true -->
+<div class="row margins justify-content-center">   
+	<%= link_to 'Warnings',  marshall_warnings_path, :class=> "btn btn-success back col-sm-5"%>
+</div>
