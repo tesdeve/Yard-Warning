@@ -49,7 +49,7 @@
 }
 
 .trunqate {
-  max-width: 190px;
+  max-width: 200px;
 }
 .lnkNewWarningBottom {
   border-radius: 5rem !important;
@@ -177,6 +177,9 @@
   .showOutput {
     font-weight: 250;
   }
+  .trunqate {
+    max-width: 150px !important;
+  }
 }
 
 @media (max-width: 576px) and (orientation : portrait) {
@@ -281,6 +284,7 @@
  .strongSize, .showOutput {
     font-size: 1.2rem !important;
   }
+
 }
 
 @media (max-width:580px) and  (orientation:landscape) {
