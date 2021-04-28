@@ -1,5 +1,5 @@
-<div class="primerForm" id="primerForm">
-  <%= form_with(model: @marshall_warning, local: false) do |form| %>
+<div class="updateForm" id="updateForm">
+  <%= form_with(model: @marshall_warning, method: :put, local: false) do |form| %>
     <% if @marshall_warning.errors.any? %>
       <div id="error_explanation">
         <h2><%= pluralize(@marshall_warning.errors.count, "error") %> prohibited this marshall_warning from being saved:</h2>
@@ -59,11 +59,10 @@
       </div>
       
       <div class="row margins justify-content-center">           
-        <%= link_to 'Warnings', marshall_warnings_path, :class=> "btn btn-primary back col-sm-5", :remote => true %>
-        <%= form.submit "Create", :class=> "btn btn-success check col-sm-5", :remote => true  %>
+        <%= link_to 'Warnings', marshall_warnings_path, :class=> "btn btn-primary back col-sm-5", remote: true  %>
+        <%= form.submit "Update", :class=> "btn btn-success check col-sm-5", remote: true %>
       </div>
     <% end %>
     </div>
   </div>
-</div>
 

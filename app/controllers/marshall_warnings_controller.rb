@@ -28,9 +28,11 @@ class MarshallWarningsController < ApplicationController
       if @marshall_warning.save
         format.html { redirect_to @marshall_warning, notice: "Marshall warning was successfully created." }
         format.json { render :show, status: :created, location: @marshall_warning }
+        format.js
       else
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @marshall_warning.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -41,9 +43,11 @@ class MarshallWarningsController < ApplicationController
       if @marshall_warning.update(marshall_warning_params)
         format.html { redirect_to @marshall_warning, notice: "Marshall warning was successfully updated." }
         format.json { render :show, status: :ok, location: @marshall_warning }
+        format.js
       else
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @marshall_warning.errors, status: :unprocessable_entity }
+        format.js
       end
     end
   end
@@ -54,6 +58,7 @@ class MarshallWarningsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to marshall_warnings_url, notice: "Marshall warning was successfully destroyed." }
       format.json { head :no_content }
+      format.js
     end
   end
 

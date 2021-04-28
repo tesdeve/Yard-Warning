@@ -1,7 +1,7 @@
 <div class="cardInitial" id="indexwarnings">
   <div class="card">
     <div class="headerInitial">
-      <h1 class="text-center margins-y initialTitle">Warnings Found</h1>
+      <h1 class="text-center margins-y initialTitle">(<%= @marshall_warnings.count %>) - Warnings Found</h1>
     </div>
     <div id="newLink">
       <%= link_to 'New Warning', new_marshall_warning_path, :class=> "btn btn-primary lnkNewWarning my-4"%>
@@ -27,17 +27,17 @@
               <td class=""><%= marshall_warning.fault %></td>
               <td class=""><%= marshall_warning.action_comment %></td>
               <td class="text-center"><%= marshall_warning.date.strftime("%d/%b/%Y") %></td>
-              <td class="text-center"><%= link_to 'Show', marshall_warning %></td>
-              <td class="text-center"><%= link_to 'Edit', edit_marshall_warning_path(marshall_warning) %></td>
-              <td class="text-center"><%= link_to 'Delete', marshall_warning, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td class="text-center"><%= link_to 'Show', marshall_warning, remote: true   %></td>
+              <!-- <td class="text-center"><%#= link_to 'Edit', edit_marshall_warning_path(marshall_warning), remote: true   %></td>
+              <td class="text-center"><%#= link_to 'Destroy', marshall_warning, method: :delete, data: { confirm: 'Are you sure?' }, remote: true   %></td> -->
             </tr>
           <% end %>
 				</tbody>
 			</table>
 		</div>
 	</div>
+  <div class="row margins justify-content-center">   
+  <%= link_to 'Warnings',  marshall_warnings_path, :class=> "btn btn-success back col-sm-5"%>
+</div>
 </div>
 
-<div class="row margins justify-content-center">   
-	<%= link_to 'Warnings',  marshall_warnings_path, :class=> "btn btn-success back col-sm-5"%>
-</div>
