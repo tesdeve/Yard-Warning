@@ -35,6 +35,8 @@
 .inputSearch {
     margin-bottom: 2% !important;
 }
+
+
 .mb-mr {
   margin-bottom: 4%;
 }
@@ -44,6 +46,10 @@
 #newLinkBottom {
   margin-left: 7.7% !important; 
  
+}
+
+.trunqate {
+  max-width: 190px;
 }
 .lnkNewWarningBottom {
   border-radius: 5rem !important;
@@ -96,14 +102,16 @@
     border-radius: 5rem !important;
 }
 .justifying-show-label {
-  justify-content: flex-end; 
+  justify-content: flex-end;
 }
-  .justifying-show-label-special {
-    justify-content: end;
-  }
 .showOutput {
   font-weight: 250;
 }
+
+.justifying-show-label-special {
+  justify-content: flex-end !important;
+}
+
 .product_action {
   color: green;
 }
@@ -132,9 +140,6 @@
   .lnkNewWarning {
     width: 30%;
   }
-  .justifying-show-label-special {
-    justify-content: end !important;
-  }
 }
 
 @media (max-width: 767px) and (orientation : portrait) {
@@ -154,8 +159,8 @@
     margin-left: 5% !important;
     margin-right: 5% !important;
   }
-  .justifying {
-    justify-content: center;
+  .justifying-show-label-special {
+    justify-content: flex-end;
   }
   .justifying-input {
     justify-content: center;
@@ -194,6 +199,9 @@
   .justifying-show-label-special {
     justify-content: center !important;
   }
+  .justifying {
+    justify-content: center !important;
+  }
   .strongSize, .showOutput {
     font-size: 1.2rem !important;
   }
@@ -211,6 +219,12 @@
   }
 }
 
+@media (max-width: 500px) and (orientation : portrait){
+.back, edit, .check {
+    font-size: 0.85rem !important;
+}
+}
+
 
 /* =============================================================== */
 /* ===================MEDIA QUERIES - LANDSCAPE ================== */
@@ -224,7 +238,6 @@
     width: 19%;
   }
   .edit, .check, .back{
-    //font-size: 1rem !important;
     width: 30% !important;
   }
 }
@@ -234,9 +247,6 @@
   .headerInitial {
       margin-bottom: 5%;
   }
-  //.col-form-label-lg, .form-control {
-  //    font-size: 1.2rem !important;
-  //}
   .searchDiv {
     margin-left: 0 !important;
     margin-right: 5%;
@@ -245,14 +255,8 @@
     margin-bottom: 2% !important;
     font-size: 1.05rem !important;
   }
-  .justifying-show-label {
-      justify-content: end !important;
-  }
   .justifying-show-label-special {
-    justify-content: end !important;
-  }
-  .justifying {
-      justify-content: end !important;
+    justify-content: flex-end !important;
   }
   .edit, .check, .back {
     font-size: 1.25rem !important;
@@ -277,8 +281,15 @@
  .strongSize, .showOutput {
     font-size: 1.2rem !important;
   }
-
 }
+
+@media (max-width:580px) and  (orientation:landscape) {
+  .justifying {
+    justify-content: center !important;
+  }
+}
+
+
 
 
 
