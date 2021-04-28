@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root "marshall_warnings#index"
   resources :marshall_warnings 
 

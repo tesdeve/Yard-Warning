@@ -1,6 +1,7 @@
 class MarshallWarningsController < ApplicationController
   before_action :set_marshall_warning, only: %i[ show edit update destroy ]
-
+  before_action :authenticate_user!
+  
   # GET /marshall_warnings or /marshall_warnings.json
   def index
     @marshall_warnings = MarshallWarning.all
