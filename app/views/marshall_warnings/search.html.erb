@@ -28,8 +28,8 @@
               <td class="text-truncate trunqate"><%= marshall_warning.action_comment %></td>
               <td class="text-center"><%= marshall_warning.date.strftime("%d/%b/%Y") %></td>
               <td class="text-center"><%= link_to 'Show', marshall_warning, remote: true   %></td>
-              <!-- <td class="text-center"><%#= link_to 'Edit', edit_marshall_warning_path(marshall_warning), remote: true   %></td>
-              <td class="text-center"><%#= link_to 'Destroy', marshall_warning, method: :delete, data: { confirm: 'Are you sure?' }, remote: true   %></td> -->
+              <td class="text-center"><%= link_to 'Edit', edit_marshall_warning_path(marshall_warning), remote: true   %></td>
+              <!--<td class="text-center"><%#= link_to 'Destroy', marshall_warning, method: :delete, data: { confirm: 'Are you sure?' }, remote: true   %></td> -->
             </tr>
           <% end %>
 				</tbody>
