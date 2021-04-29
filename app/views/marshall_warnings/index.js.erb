@@ -19,13 +19,10 @@ $('#allViews').append('<%= j render("index") %>')
 function reloadRootPage() {
   let origin = window.location.origin
   if (origin === "http://localhost:3000"){
-  	console.log("HOST1" + origin)
   	location.replace('http://localhost:3000');
 	} else if (origin === 'https://ywarnings.herokuapp.com'){
-		console.log("HOST2" + origin)
 		location.replace('https://ywarnings.herokuapp.com');
 	} else if (origin === 'http://ywarnings.herokuapp.com'){
-		console.log("HOST3" + origin)
 		location.replace('http://ywarnings.herokuapp.com');
 	}
 }
