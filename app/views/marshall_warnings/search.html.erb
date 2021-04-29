@@ -4,7 +4,7 @@
       <h1 class="text-center margins-y initialTitle">(<%= @marshall_warnings.count %>) - Warnings Found</h1>
     </div>
     <div id="newLink">
-      <%= link_to 'New Warning', new_marshall_warning_path, :class=> "btn btn-primary lnkNewWarning my-4"%>
+      <%= link_to 'New Warning', new_marshall_warning_path, :class=> "btn btn-primary lnkNewWarning my-4", remote: true %>
     </div>
     <div class="table-responsive ">
       <table class="table table-striped">
@@ -37,7 +37,7 @@
 		</div>
 	</div>
   <div class="row margins justify-content-center">   
-  <%= link_to 'Warnings',  marshall_warnings_path, :class=> "btn btn-success back col-sm-5"%>
+  <%= link_to 'Warnings',  marshall_warnings_path, :class=> "btn btn-success back col-sm-5", remote: true %>
 </div>
 </div>
 

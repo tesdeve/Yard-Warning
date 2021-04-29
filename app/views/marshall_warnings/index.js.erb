@@ -8,9 +8,40 @@ $("#showProduct").remove()
 $("#primerForm").remove()
 $(".updateForm").remove()
 
+// Removes the index table from search
+$("#indexSearch").remove()
+
 $('#allViews').append('<%= j render("index") %>')
 
+// Replace and reload the index page
+// Great article =>   https://dev.to/samanthaming/window-location-cheatsheet-4edl
 
-//var host = window.location.host
-////
-//alert(host)
+function reloadRootPage() {
+  let origin = window.location.origin
+  if (origin === "http://localhost:3000"){
+  	console.log("HOST1" + origin)
+  	location.replace('http://localhost:3000');
+	} else if (origin === 'https://ywarnings.herokuapp.com'){
+		console.log("HOST2" + origin)
+		location.replace('https://ywarnings.herokuapp.com');
+	}
+}
+reloadRootPage()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

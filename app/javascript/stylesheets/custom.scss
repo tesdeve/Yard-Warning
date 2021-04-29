@@ -106,7 +106,7 @@
   justify-content: flex-end;
 }
 .showOutput {
-  font-weight: 250;
+  font-weight: 350;
 }
 
 .justifying-show-label-special {
@@ -175,9 +175,9 @@
   .mb-mr {
       margin-right: none !important;
   }
-  .showOutput {
-    font-weight: 250;
-  }
+  //.showOutput {
+  //  font-weight: 350;
+  //}
   .trunqate {
     max-width: 150px !important;
   }
