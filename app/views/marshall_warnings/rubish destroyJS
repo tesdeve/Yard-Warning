@@ -1,5 +1,0 @@
-
-//$("#marshall_warning_<%= @marshall_warning.id %>").fadeOut(500, function () {
-//  $(this).remove();
-//});
-// $('#allViews').append('<%= j render("index") %>')

@@ -157,8 +157,8 @@
   .margins {
     margin-top: 10% !important;
     margin-bottom: 10%;
-    margin-left: 5% !important;
-    margin-right: 5% !important;
+    //margin-left: 5% !important;
+    //margin-right: 5% !important;
   }
   .justifying-show-label-special {
     justify-content: flex-end;
@@ -225,7 +225,7 @@
 
 @media (max-width: 500px) and (orientation : portrait){
 .back, edit, .check {
-    font-size: 0.85rem !important;
+    font-size: 1.15rem !important;
 }
 }
 
