@@ -1,0 +1,34 @@
+
+a.btn.btn-back {
+    background-color: #0d0d0dd4;
+    color: #ffffffed;
+}
+
+input#user_remember_me {
+    margin-right: 10px;
+}
+
+.flex-fill {
+    flex: 1 1 auto;
+}
+
+.containerCard {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.card-Login {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+.card-header {
+  padding: 1.5rem 1rem !important;
+  background: #fffb00 !important;
+}
+.buttonLogin {
+    color: white;
+    border-color: #35c335;
+    background: #35c335;
+}
