@@ -11,12 +11,13 @@
   </head>
 
   <body>
-    <%#= render 'layouts/navbar' %> 
+    <%= render 'layouts/navbar' %> 
     <div class="container-fluid">
       <div id="allViews"> 
-        <%# if alert || notice %>
-          <%#= render 'layouts/alerts' %>
-        <%# end %>
+        <% if alert || notice %>
+          <%= render 'layouts/alerts' %>
+        <% end %>
+        
         <%= yield %>
       </div>
     </div>

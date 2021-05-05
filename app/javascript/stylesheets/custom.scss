@@ -3,6 +3,12 @@
   //background-color: #cef8fd !important;
   background-color: #fff12029 !important;
 }
+
+a.singOut {
+    color: black !important;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
 .strongSize {
   font-weight: 550;
   font-size: 1.25rem;  
@@ -13,7 +19,7 @@
 .table th{
   text-align: center;
 }
-.cardInitial {
+.cardInitial, .marginsAlerts {
   margin: 3%;
 }
 .initialTitle {
@@ -132,6 +138,9 @@
   .strongSize, .showOutput {
    font-size: 1.25rem !important;
   }
+  a.singOut {
+    font-size: 1.25rem;
+  }
   .initialTitle {
     font-size: 1.7rem !important;
   }
@@ -209,6 +218,9 @@
   .strongSize, .showOutput {
     font-size: 1.2rem !important;
   }
+  a.singOut {
+    font-size: 1.2rem !important;
+  }
   .back {
     font-size: 1rem !important;
   }
@@ -283,6 +295,9 @@
     margin-left: 9%;
   }
  .strongSize, .showOutput {
+    font-size: 1.2rem !important;
+  }
+  a.singOut {
     font-size: 1.2rem !important;
   }
 
