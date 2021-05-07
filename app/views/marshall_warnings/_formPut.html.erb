@@ -52,8 +52,9 @@
         </div>
       </div>
       
-      <div class="row margins justify-content-center">           
-        <%= link_to 'Warnings', root_path, :class=> "btn btn-primary back col-sm-5", remote: true  %>
+      <div class="row margins justify-content-center">
+        <%= link_to 'Warnings', root_path, :class=> "btn btn-primary back col-sm-5", :remote => true %>           
+        <%#= link_to 'Warnings', marshall_warnings_path, :class=> "btn btn-primary back col-sm-5", remote: true  %>
         <%= form.submit "Update", :class=> "btn btn-success check col-sm-5", remote: true %>
       </div>
     <% end %>

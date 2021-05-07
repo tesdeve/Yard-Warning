@@ -15,6 +15,7 @@ ActiveStorage.start()
 
 
 require("jquery")
+require("service_workers")
 
 // ADDING BOOTSTRAP PART STARTS HERE -- and enable tooltips and popovers everywere
 
