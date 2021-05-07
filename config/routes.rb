@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
 
   root "marshall_warnings#index"  
-
-  #root 'pages#home'  
   resources :marshall_warnings 
   devise_for :users
   get 'search', to: 'marshall_warnings#search'
+
+  
+
+  #root 'pages#home'  
 
   # devise_for :users, controllers: {
   #      sessions: 'users/sessions'
