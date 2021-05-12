@@ -10,5 +10,7 @@ class MarshallWarning < ApplicationRecord
   def set_fontSize
     self.dsp = dsp.upcase
     self.registration_number = registration_number.upcase
+    self.fault = fault.capitalize
+    self.action_comment = action_comment.capitalize 
   end
 end
