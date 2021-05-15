@@ -8,6 +8,12 @@ class MarshallWarningsController < ApplicationController
     @users = User.all.count
   end
 
+  #Keeps track of all the warnings given
+  def history
+    @marshall_warnings = MarshallWarning.only_deleted
+  #  @history_warning = @history_warning
+  end
+
   # GET /marshall_warnings/1 or /marshall_warnings/1.json
   def show
   end
@@ -78,9 +84,6 @@ class MarshallWarningsController < ApplicationController
       @marshall_warning = MarshallWarning.find(params[:id])
     end
 
-    #def set_user
-    #  @user = User.find(params[:id])
-    #end
     # Only allow a list of trusted parameters through.
     def marshall_warning_params
       params.require(:marshall_warning).permit(:dsp, :registration_number, :fault, :action_comment, :date)

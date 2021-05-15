@@ -1,12 +1,20 @@
 <!-- Total Users: <%#= @users %> -->
-<div class="cardInitial" id="indexwarnings">
+<div class="cardInitial" id="indexwarningsHistory">
   <div class="card">
     <div class="headerInitial">
-      <h1 class="text-center margins-y initialTitle">(<%= @marshall_warnings.count %>) - Warnings</h1>
+      <h1 class="text-center margins-y initialTitle">(<%= @marshall_warnings.count %>) - Warnings Deleted</h1>
     </div>
-    <div id="newLink">
-      <%= link_to 'New Warning', new_marshall_warning_path, :class=> "btn btn-primary lnkNewWarning my-4" , remote: true %>
-    </div>
+
+
+<!--   <div id="newLink">
+      <%#= link_to 'New Warning', new_marshall_warning_path, :class=> "btn btn-primary lnkNewWarning my-4" , remote: true %>
+    </div>  -->
+
+
+    <div class="row margins justify-content-center">
+      <%= link_to 'Warnings', root_path, :class=> "btn btn-primary back back_history col-sm-5 my-4", :remote => true %></div>  <!-- , :remote => true  -->
+
+
     <hr>
     <div class="input-group mb-3">
       <form class="searchDiv" action="/search">
@@ -39,17 +47,18 @@
               <td class="text-center"><%= marshall_warning.date.strftime("%d/%b/%Y") %></td>
               <td class="text-center"><%= link_to 'Show', marshall_warning, remote: true %></td>
               <td class="text-center"><%= link_to 'Edit', edit_marshall_warning_path(marshall_warning), remote: true %></td>
-              <td class="text-center"><%= link_to 'Destroy', marshall_warning, method: :delete, data: { confirm: 'Are you sure?' }, remote: true %></td>
+              <td class="text-center"><%#= link_to 'History', root_path, data: { confirm: 'Are you sure?, Sure??' }, remote: true %></td>
+            <!--   <td class="text-center"><%#= link_to 'Destroy', marshall_warning, method: :delete, data: { confirm: 'Are you sure?' }, remote: true %></td> -->
             </tr>
           <% end %>
         </tbody>
       </table>
     </div>
   </div>
+    <div class="row margins justify-content-center">
+      <%= link_to 'Warnings', root_path, :class=> "btn btn-primary back back_history col-sm-5 my-4", :remote => true %></div>  <!-- , :remote => true  -->
+<!-- 
   <div id="newLinkBottom">
-    <%= link_to 'New Warning', new_marshall_warning_path, :class=> "btn btn-primary lnkNewWarning my-4", remote: true %>
+    <%#= link_to 'New Warning', new_marshall_warning_path, :class=> "btn btn-primary lnkNewWarning my-4", remote: true %>
   </div>
-</div>
-
-
-<!-- remote: true -->
+</div> -->
