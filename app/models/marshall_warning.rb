@@ -1,4 +1,5 @@
 class MarshallWarning < ApplicationRecord
+  acts_as_paranoid
 
   before_save :set_date, :set_fontSize
   #before_save :set_fontSize

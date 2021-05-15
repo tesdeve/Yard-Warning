@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
 
   root "marshall_warnings#index"  
-  resources :marshall_warnings 
+  resources :marshall_warnings do 
+    collection do 
+      get 'history', to: 'marshall_warnings#history'
+    end    
+  end
+
   devise_for :users
   get 'search', to: 'marshall_warnings#search'
 
