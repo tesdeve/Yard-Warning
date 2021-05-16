@@ -1,20 +1,10 @@
-<!-- Total Users: <%#= @users %> -->
 <div class="cardInitial" id="indexwarningsHistory">
   <div class="card">
     <div class="headerInitial">
       <h1 class="text-center margins-y initialTitle">(<%= @marshall_warnings.count %>) - Warnings Deleted</h1>
     </div>
-
-
-<!--   <div id="newLink">
-      <%#= link_to 'New Warning', new_marshall_warning_path, :class=> "btn btn-primary lnkNewWarning my-4" , remote: true %>
-    </div>  -->
-
-
-    <div class="row margins justify-content-center">
-      <%= link_to 'Warnings', root_path, :class=> "btn btn-primary back back_history col-sm-5 my-4", :remote => true %></div>  <!-- , :remote => true  -->
-
-
+      <div class="row margins justify-content-center">
+      <%= link_to 'Warnings', root_path, :class=> "btn btn-primary back back_history col-sm-5 my-4", :remote => true %></div> 
     <hr>
     <div class="input-group mb-3">
       <form class="searchDiv" action="/search">
@@ -35,7 +25,6 @@
             <th colspan="3"></th>
           </tr>
         </thead>
-
         <tbody>
           <% @marshall_warnings.each do |marshall_warning| %>
             <tr id="marshall_warning_<%=marshall_warning.id %>">
@@ -55,10 +44,6 @@
       </table>
     </div>
   </div>
-    <div class="row margins justify-content-center">
-      <%= link_to 'Warnings', root_path, :class=> "btn btn-primary back back_history col-sm-5 my-4", :remote => true %></div>  <!-- , :remote => true  -->
-<!-- 
-  <div id="newLinkBottom">
-    <%#= link_to 'New Warning', new_marshall_warning_path, :class=> "btn btn-primary lnkNewWarning my-4", remote: true %>
-  </div>
-</div> -->
+  <div class="row margins justify-content-center">
+    <%= link_to 'Warnings', root_path, :class=> "btn btn-primary back back_history col-sm-5 my-4", :remote => true %>
+  </div> 
