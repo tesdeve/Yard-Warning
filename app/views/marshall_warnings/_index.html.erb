@@ -33,7 +33,7 @@
             <tr id="marshall_warning_<%=marshall_warning.id %>">
               <!-- <td class="text-center"><%#= marshall_warning.dsp_id %></td> -->
               <td class="text-center"><%= marshall_warning.dsp.upcase %></td>
-              <td class="text-center"><%= marshall_warning.registration_number.upcase %></td>
+              <td class="text-center trunqateReg"><%= marshall_warning.registration_number.upcase %></td>
               <td class="text-truncate trunqate"><%= marshall_warning.fault.capitalize %></td>
               <td class="text-truncate trunqate"><%= marshall_warning.action_comment.capitalize %></td>
               <td class="text-center"><%= marshall_warning.date.strftime("%d/%b/%Y") %></td>
