@@ -11,7 +11,6 @@ class MarshallWarningsController < ApplicationController
   #Keeps track of all the warnings given
   def history
     @marshall_warnings = MarshallWarning.only_deleted
-  #  @history_warning = @history_warning
   end
 
   # GET /marshall_warnings/1 or /marshall_warnings/1.json
