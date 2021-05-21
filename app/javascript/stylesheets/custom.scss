@@ -2,12 +2,6 @@
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(2n+1) > th {    
   background-color: #fbff009c !important;
 }
-
-.redish{
-  color: red; 
-}
-
-
 a.singOut {
     color: black !important;
     font-weight: 400;
@@ -58,12 +52,11 @@ a.singOut {
   margin-left: 7.7% !important; 
  
 }
-
 .trunqate {
   max-width: 200px;
 }
 
-.trunqateReg {
+.withReg {
   max-width: 185px;
 }
 
@@ -196,12 +189,15 @@ a.singOut {
   .trunqate {
     max-width: 150px !important;
   }
-  .trunqateReg{
-  max-width: 170px !important;
+  .withReg{
+    width: 18em;
+    min-width: 18em;
+    //max-width: 170px !important;
   }
+
   .redish{
-  color: blue !important;
-}
+    color: blue !important;
+  }
 }
 
 @media (max-width: 576px) and (orientation : portrait) {
