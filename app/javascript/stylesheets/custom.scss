@@ -3,6 +3,11 @@
   background-color: #fbff009c !important;
 }
 
+.redish{
+  color: red; 
+}
+
+
 a.singOut {
     color: black !important;
     font-weight: 400;
@@ -194,6 +199,9 @@ a.singOut {
   .trunqateReg{
   max-width: 170px !important;
   }
+  .redish{
+  color: blue !important;
+}
 }
 
 @media (max-width: 576px) and (orientation : portrait) {
