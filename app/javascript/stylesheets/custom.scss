@@ -57,7 +57,10 @@ a.singOut {
 }
 
 .withReg {
-  max-width: 185px;
+  .withReg{
+    width: 14em !important;
+    min-width: 14em! important;
+  }
 }
 
 .lnkNewWarningBottom {
@@ -190,13 +193,8 @@ a.singOut {
     max-width: 150px !important;
   }
   .withReg{
-    width: 18em;
-    min-width: 18em;
-    //max-width: 170px !important;
-  }
-
-  .redish{
-    color: blue !important;
+    width: 13em !important;
+    min-width: 13em! important;
   }
 }
 
